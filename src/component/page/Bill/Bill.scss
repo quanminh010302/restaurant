@@ -1,0 +1,182 @@
+.selected-menus {
+    display: flex;
+    /* Sử dụng hiển thị theo kiểu flexbox để các món ăn nằm cùng một hàng */
+    flex-wrap: wrap;
+    /* Cho phép các món ăn xuống dòng nếu không đủ không gian */
+    gap: 20px;
+    /* Khoảng cách giữa các món ăn */
+}
+
+.selected-menu {
+    display: flex;
+    /* Sử dụng hiển thị theo kiểu flexbox để hình ảnh và chi tiết nằm cùng một hàng */
+    align-items: center;
+    /* Canh giữa nội dung trong món ăn */
+}
+
+.menu-image {
+    width: 100px;
+    /* Độ rộng của phần hình ảnh */
+    margin-right: 10px;
+    /* Khoảng cách giữa hình ảnh và chi tiết */
+}
+
+img {
+    max-width: 100%;
+    /* Hình ảnh tự co giãn để vừa vào phần chi tiết */
+}
+
+.selected-items {
+    width: 25%;
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 10px;
+    transition: top 0.3s;
+    /* Thêm transition để làm mượt hiệu chỉnh khi di chuyển */
+}
+
+.selected-items-content {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.center-content {
+    text-align: center;
+    /* Căn giữa theo chiều ngang */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Căn giữa theo chiều dọc */
+}
+
+.custom-date-picker {
+    width: 100%;
+    /* Độ rộng 100% của phần chọn ngày */
+    padding: 10px;
+    /* Khoảng cách giữa các phần tử */
+    border: 1px solid #ccc;
+    /* Viền xung quanh */
+    border-radius: 4px;
+    /* Bo góc viền */
+    font-size: 16px;
+    /* Kích thước chữ */
+}
+
+.custom-date-picker:hover {
+    border-color: #007BFF;
+    /* Màu viền khi di chuột qua */
+}
+
+.custom-date-picker:focus {
+    border-color: #007BFF;
+    /* Màu viền khi trạng thái focus (click vào) */
+}
+
+.bill {
+    margin-top: 50px;
+
+    .image-fixed-height {
+        height: 200px;
+        /* Thay đổi kích thước tùy ý */
+        object-fit: cover;
+        /* Đảm bảo hình ảnh không bị méo */
+    }
+
+    .bill-page {
+        margin-top: 150px;
+
+        // margin-left: 10%;
+
+        .bill-form-container {
+            width: 1100px;
+            padding: 50px;
+            box-shadow: 0px 0px 21px rgba(0, 0, 0, 0.6);
+
+            .title {
+                font-size: 50px;
+                font-weight: 650;
+                text-align: center
+            }
+
+            .label-container {
+                display: flex;
+                font-size: 20px;
+                font-weight: 850;
+                margin-top: 10px;
+                /* Nếu bạn muốn căn giữa theo chiều ngang */
+                /* Các thuộc tính khác (màu sắc, kích thước, vị trí, v.v.) */
+            }
+
+            .body {
+                display: flex;
+                flex-wrap: wrap;
+                /* Thiết lập flex-wrap để các phần tử tự động xuống hàng */
+                justify-content: space-between;
+
+                .card {
+                    margin-bottom: 16px;
+                    /* Ví dụ: Khoảng cách dưới mỗi Card là 16px */
+
+                }
+
+                .form-check {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    transform: scale(1.5);
+                    /* Điều chỉnh kích thước của checkbox khi được kiểm tra */
+                    margin-top: 4px;
+                }
+
+            }
+
+        }
+    }
+
+
+}
+.promo-code-card label {
+    display: flex;
+    flex-direction: column;
+}
+
+.promo-code-quantity,
+.promo-code-expiration {
+    font-weight: bold;
+}
+.promo-code-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.promo-code-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
+    background-color: #f85454;
+    transition: background-color 0.3s;
+}
+
+.promo-code-card:hover {
+    transform: scale(0.9); /* Tăng kích thước khi hover */
+    transition: transform 0.4s ease-in-out; /* Thêm hiệu ứng chuyển đổi màu nền và kích thước */
+}
+
+
+.promo-code-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.promo-code-string {
+    font-weight: bold;
+}
+
+.promo-code-discount {
+    color: #f3ebeb;
+}
